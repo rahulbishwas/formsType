@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<style>
+
+    #div1{
+        border:1px solid black;
+        padding:10px 10px;
+        margin-top:10vh;
+    }
+
+
+
+</style>
+</head>
+<body>
+    
+
+
+ <!-- First Name:<input type="text"  id="first"><br><br>
+ Last Name:<input type="text" id="last"><br><br>
+
+Email id:<input type="email" id="email"><br><br>
+Address:<input type="text"  id="address"><br><br>
+
+<input type="button"  value="Show Value"   onclick="showFuntion()">
+
+
+
+
+<script>
+
+
+    function showFuntion(){
+
+
+
+   var a=document.getElementById("first").value;
+   var b=document.getElementById("last").value;
+   var c=document.getElementById("email").value;
+    var d=document.getElementById("address").value;
+
+
+    if(a==""  && b=="" && c=="" &&  d==""){
+        alert("Please Fill the form")
+        return
+    }
+
+    if(a==""){
+        alert("Enter your first name")
+        return
+    }
+    else if(b==""){
+        alert("Enter your last name")
+        return
+    }
+     else if(c==""){
+        alert("Enter your email name")
+        return
+    }
+    else if(d==""){
+        alert("Enter your address name")
+    }
+
+
+
+
+var x=a+""+b+""+c+""+d;
+alert(x);
+
+    }
+</script> -->
+
+
+<div class="container">
+
+    <div class="row">
+    <div class="col-sm-4  col-md-4  col-lg-4">
+      
+    </div>
+    <div class="col-sm-4  col-md-4  col-lg-4">
+            <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post"  id="div1">
+         
+             First Name:<input type="text"  id="first" class="form-control">
+             Last Name:<input type="text"  id="last" class="form-control">
+             Email id:<input type="text"  id="email" class="form-control">
+             Address:<input type="text"  id="address" class="form-control"><br>
+             <button type="button" class="btn btn-primary"  value="Submit" onclick="showFuntion()">Submit</button>
+             <input type="reset"  class="btn btn-danger" value="Reset" name="Reset"> 
+             </form>
+            
+
+        </div>
+        <div class="col-sm-4  col-md-4  col-lg-4">
+               
+         </div>
+         </div>
+</div>
+
+
+<script>
+
+    function showFuntion(){
+ 
+
+ 
+ var a=document.getElementById("first").value;
+   var b=document.getElementById("last").value;
+   var c=document.getElementById("email").value;
+    var d=document.getElementById("address").value;
+
+
+    // if(a==""  && b=="" && c=="" &&  d==""){
+    //     alert("Form is  Empty")
+      
+    // }
+
+    // if(a==""){
+    //     alert(" First Name required")
+       
+    // }
+    //  if(b==""){
+    //     alert( "Last Name required")
+    
+    // }
+    //   if(c==""){
+    //     alert("Email is required")
+  
+    // }
+    //  if(d==""){
+    //     alert("address is required")
+    // }
+
+    var value="";
+if(a==""){
+    value+="First is empty"+"\n";
+}
+
+else {
+   value+=a+"\n";
+}
+
+if(b==""){
+    value+=" Second is empty"+"\n";
+}
+
+else {
+   value+=b+"\n";
+}
+
+if(c==""){
+    value+=" Third is empty"+"\n";
+}
+
+else {
+   value+=c+"\n";
+}
+
+if(d==""){
+    value+=" Forth is empty"+"\n";
+}
+
+else {
+   value+=d+"\n";
+}
+
+
+alert(value);
+
+
+
+
+// var x=a+""+b+""+c+""+d;
+// alert(x);
+ }
+    
+
+
+</script>
+
+
+</body>
+</html>
